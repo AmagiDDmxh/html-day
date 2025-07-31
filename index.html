@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Day Guangzhou | HTML Day 广州</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        margin: 0;
+        padding: 40px 20px;
+        background-color: #fafafa;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #000;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .nav-button {
+        padding: 8px 16px;
+        background: #f0f0f0;
+        border: none;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #666;
+        font-size: 14px;
+        transition: background-color 0.2s;
+      }
+
+      .nav-button:hover {
+        background: #e0e0e0;
+      }
+
+      .event-info {
+        margin: 40px 0;
+        font-size: 1.1rem;
+      }
+
+      .date {
+        font-weight: 600;
+        color: #000;
+      }
+
+      .visit-link {
+        display: inline-block;
+        margin: 30px 0;
+        padding: 12px 24px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: background-color 0.2s;
+      }
+
+      .visit-link:hover {
+        background: #0056b3;
+      }
+
+      .energy-orb {
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+        background: radial-gradient(
+          circle,
+          #e2e6d7 30%,
+          #e2e6d7 60%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        filter: blur(2px);
+        opacity: 0.8;
+      }
+
+      .description {
+        max-width: 600px;
+        margin: 0 auto 40px;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .organizer {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+      }
+
+      .organizer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .organizer a:hover {
+        text-decoration: underline;
+      }
+
+      .qr-section {
+        margin: 40px 0;
+        padding: 30px;
+        background: white;
+        border-radius: 12px;
+      }
+
+      .qr-code {
+        width: 200px;
+        height: 243px;
+        margin: 20px;
+        background: #f0f0f0;
+        border: 2px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .qr-code img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .lang-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+
+      .chinese {
+        display: none;
+      }
+
+      .chinese.active {
+        display: block;
+      }
+
+      .english.active {
+        display: block;
+      }
+
+      .english {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .nav-buttons {
+          gap: 10px;
+        }
+
+        .nav-button {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Chinese Content -->
+      <div class="chinese active">
+        <h1>HTML Day 广州</h1>
+
+        <div class="nav-buttons">
+          <a href="#about" class="nav-button">📖 关于</a>
+          <a href="#event" class="nav-button">🎯 活动</a>
+          <a href="#organizer" class="nav-button">👤 组织者</a>
+          <a href="#join" class="nav-button">💬 加入群聊</a>
+        </div>
+
+        <div class="event-info" id="about">
+          <p>
+            在
+            <span class="date">2025年8月2日，星期六，下午4点到6点半</span
+            >，我们将在广州聚会，参与
+            <a
+              href="https://html.energy/html-day/2025/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HTML Day</a
+            >。
+          </p>
+        </div>
+
+        <div class="energy-orb"></div>
+        <div class="event" id="event">
+          <p>
+            什么是 HTML Day？是由
+            <a
+              href="https://html.energy/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HTML Energy</a
+            >
+            发起的每年一次写 HTML 的聚会。
+          </p>
+          <h3>目标</h3>
+          <ul>
+            <li>
+              让人知道 Web
+              这个古老的技术还存在，让人体会与感受手工制作网页的乐趣。
+            </li>
+            <li>
+              还记得你第一次写 HTML 的感觉吗？如果没有学过也没关系哦，一起来玩。
+            </li>
+            <li>感受 HTML 的（Energy），手写 HTML，就跟摸摸草地一样！</li>
+            <li>
+              希望每个人都能掌握一些基础技术，自己表达、创作，而不是只依靠大公司决定我们在网上看到什么。
+            </li>
+          </ul>
+          <h3>参加活动需要什么</h3>
+          <ul>
+            <li>你自己本人</li>
+            <li>一个可以写 HTML 的东西（电脑、笔记）</li>
+            <li>可选：铺草地用的毛毯</li>
+          </ul>
+          <h3>参加地点</h3>
+          <p>一处带草地的公园，如果下雨就去附近的屋里，进群跟进后续地点通知</p>
+          <h3>需要钱吗？</h3>
+          <p>去公园草地，不花钱的哦～</p>
+          <h3>不知道 HTML 是什么？</h3>
+          <p>没关系，我用了十几年了，也不太知道这是什么。不过我会帮助你的。</p>
+          <h3>我不在广州，哪里有类似的活动？</h3>
+          <p>
+            可以访问
+            <a
+              href="https://html.energy/html-day/2025/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >HTML Day</a
+            >
+            查看其他地区的活动。
+          </p>
+          <p>
+            虽然有点晚了，但如果想在自己的城市举办，可以查看官网看举办流程。
+          </p>
+        </div>
+
+        <div class="organizer qr-section" id="organizer">
+          <h3>组织者</h3>
+          <p><strong>Amagi</strong></p>
+          <p>
+            访问：<a href="https://amagi.love" target="_blank">amagi.love</a>
+          </p>
+        </div>
+
+        <div class="qr-section" id="join">
+          <h3>加入我们的群聊</h3>
+          <p>扫描二维码加入我们的 HTML Day 广州群</p>
+          <div class="qr-code">
+            <img src="./qrcode.png" />
+          </div>
+        </div>
+
+        <div>
+          <p>网页全部使用 HTML 进行编写，纯天然🌳</p>
+          <p>查看<a href="https://github.com/AmagiDDmxh/html-day">源代码</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
